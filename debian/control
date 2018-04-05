@@ -1,0 +1,19 @@
+Source: golang-cloudfoundry-archiver
+Section: devel
+Priority: optional
+Maintainer: Aron Xu <happyaron.xu@gmail.com>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+               golang-gomega-dev,
+               golang-ginkgo-dev
+Standards-Version: 4.1.3
+Homepage: https://github.com/cloudfoundry/archiver
+XS-Go-Import-Path: code.cloudfoundry.org/archiver
+
+Package: golang-cloudfoundry-archiver-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: archiver from cloudfoundry in Go
+ Utilities for extracting and compressing tgz and zip files.
